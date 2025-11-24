@@ -1,0 +1,57 @@
+# ------------------------
+# Python
+# ------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+*.log
+
+# Virtual env
+venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ------------------------
+# Spark / ETL
+# ------------------------
+.metastore_db/
+spark-warehouse/
+derby.log
+checkpoint/
+checkpoints/
+logs/
+tmp/
+*.crc
+
+# ------------------------
+# IDE / Editors
+# ------------------------
+.idea/
+.vscode/
+*.swp
+*.iml
+
+# ------------------------
+# OS Files
+# ------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------
+# Configs / Secrets
+# ------------------------
+*.env
+*.json
+*.yaml
+*.yml
+secrets/
+credentials/
+config/local/
