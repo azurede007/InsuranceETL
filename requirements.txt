@@ -1,0 +1,5 @@
+# MySQL JDBC connector
+mysql-connector-python==8.0.33
+
+# YAML configuration
+PyYAML==6.0.1
