@@ -30,7 +30,7 @@ offsets to maintain incremental processing.
 
 ## 2. Folder Structure
 
-    insurance-pyspark-etl/
+    insuranceETL/
     ├── conf/
     │   └── config.yml
     ├── stages/

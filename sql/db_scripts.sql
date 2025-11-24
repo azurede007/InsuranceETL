@@ -47,6 +47,9 @@ CREATE TABLE IF NOT EXISTS etl_offsets (
     inserted_ts timestamp default current_timestamp()
 );
 
+DROP TABLE  if exists insurance_metrics;
+
+
 INSERT INTO customers(name,email,phone,address) VALUES ('Customer1','customer1@mail.com','900001001','Address 1');
 INSERT INTO customers(name,email,phone,address) VALUES ('Customer2','customer2@mail.com','900001002','Address 2');
 INSERT INTO customers(name,email,phone,address) VALUES ('Customer3','customer3@mail.com','900001003','Address 3');

@@ -16,7 +16,7 @@ def main():
     try:
         config = load_config("conf/config.yml")
         spark = get_spark("Insurance_ETL_Pipeline")
-        mysql_props = get_mysql_properties(config["mysql"])
+        #mysql_props = get_mysql_properties(config["mysql"])
         offset_mgr = OffsetManager(config["mysql"], spark)
 
         ingest = IngestStage(spark, config["mysql"], offset_mgr, logger)
