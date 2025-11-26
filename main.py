@@ -1,6 +1,5 @@
 from utils.logger import get_logger
 from utils.spark_session import get_spark
-from utils.db_utils import get_mysql_properties
 from utils.offsets import OffsetManager
 from stages.ingest import IngestStage
 from stages.transform import TransformStage
@@ -16,7 +15,6 @@ def main():
     try:
         config = load_config("conf/config.yml")
         spark = get_spark("Insurance_ETL_Pipeline")
-        #mysql_props = get_mysql_properties(config["mysql"])
         offset_mgr = OffsetManager(config["mysql"], spark)
 
         ingest = IngestStage(spark, config["mysql"], offset_mgr, logger)

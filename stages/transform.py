@@ -1,8 +1,8 @@
 from pyspark.sql.functions import sum as _sum, avg, count
 
 class TransformStage:
-    def __init__(self, spark, logger):
-        self.spark = spark
+    def __init__(self, logger):
+
         self.logger = logger
 
     def enrich(self, claims, customers, policies, payments):

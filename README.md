@@ -94,3 +94,13 @@ CREATE TABLE IF NOT EXISTS insurance_metrics (...);
 
 Integrated logging + Spark UI for monitoring.
 
+## 10, Packaging for deployment
+1. create a zip file with a name called "Insure-pkg.zip" for all python files dependencies(stages,utils) and copy into deploy folder
+2. Download mysql jdbc jar and copy the jar file into the deploy folder
+3. In the command line, run below command to create wheel file for the library mysql-connector-python library
+	pip download mysql-connector-python --platform any --only-binary=:all: --no-deps
+   copy the whl file into the deploy folder
+4. Copy the config.yml file into the deploy folder   
+5. copy the main.py file into the deploy folder
+
+spark-submit --master local[*] --py-files Insure-pkg.zip,mysql_connector_python-9.5.0-py2.py3-none-any.whl --jars mysql-connector-j-8.0.33.jar --files conf/config.yml main.py
