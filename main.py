@@ -13,7 +13,7 @@ def load_config(path):
 def main():
     logger = get_logger("InsuranceETL")
     try:
-        config = load_config("conf/config.yml")
+        config = load_config("config.yml")
         spark = get_spark("Insurance_ETL_Pipeline")
         offset_mgr = OffsetManager(config["mysql"], spark)
 
