@@ -1,5 +1,5 @@
 mysql:
-  host: "34.66.249.221"
+  host: "10.93.160.3"
   port: 3306
   database: "kbnhzraf_insurancedb"
   user: "root"
