@@ -6,7 +6,7 @@ set -e
 # ---------------------------------------------
 REPO_URL="https://github.com/azurede007/InsuranceETL"
 BUCKET_PATH="gs://iz-insureproject/insurance-etl"
-BATCH_NAME="insurance-010"
+BATCH_NAME="insurance-012"
 REGION="us-central1"
 RUNTIME_VERSION="2.3"
 WHEEL_NAME="mysql_connector_python-9.5.0-py2.py3-none-any.whl"

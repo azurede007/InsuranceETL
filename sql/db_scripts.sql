@@ -1,3 +1,4 @@
+CREATE DATABASE IF NOT EXISTS kbnhzraf_insurancedb;
 use kbnhzraf_insurancedb;
 -- Customers table
 DROP TABLE  if exists customers;
