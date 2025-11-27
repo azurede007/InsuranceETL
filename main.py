@@ -18,7 +18,7 @@ def main():
         offset_mgr = OffsetManager(config["mysql"], spark)
 
         ingest = IngestStage(spark, config["mysql"], offset_mgr, logger)
-        transform = TransformStage(spark, logger)
+        transform = TransformStage(logger)
         writeback = WriteBackStage(config["mysql"], logger)
 
         claims = ingest.load_incremental("claims", "claim_id")

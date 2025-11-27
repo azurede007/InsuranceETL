@@ -1,7 +1,7 @@
 mysql:
-  host: "103.86.177.4"
+  host: "34.66.249.221"
   port: 3306
   database: "kbnhzraf_insurancedb"
-  user: "kbnhzraf_etluser"
-  password: "etluser@123"
+  user: "root"
+  password: "root"
   driver: "com.mysql.cj.jdbc.Driver"
